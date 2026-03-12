@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Atlas | Select Song</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="songs">
+    <header class="topbar">
+      <h1>Song Atlas</h1>
+    </header>
+
+    <main class="app">
+      <section class="panel" id="songScreen">
+        <div class="row-head">
+          <h2 id="songScreenTitle">Select Song</h2>
+          <button id="backToLanding" type="button">Back</button>
+        </div>
+        <label>
+          Search song
+          <input id="searchInput" type="search" placeholder="Search song or artist" />
+        </label>
+        <ul id="songList" class="song-list"></ul>
+      </section>
+    </main>
+
+    <template id="songCardTemplate">
+      <li>
+        <button type="button" class="song-card">
+          <h4></h4>
+          <p class="artist"></p>
+          <p class="details"></p>
+        </button>
+      </li>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
