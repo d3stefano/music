@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Song Atlas | Preview</title><link rel="stylesheet" href="styles.css" /></head>
+  <body data-page="preview">
+    <header class="topbar"><h1>Song Atlas</h1></header>
+    <nav class="card-nav-container" aria-label="Site navigation"><div class="card-nav" id="cardNav"><div class="card-nav-top"><button id="menuToggle" class="hamburger-menu" type="button" aria-label="Open menu" aria-expanded="false"><span class="hamburger-line"></span><span class="hamburger-line"></span></button><div class="logo-container">◆ Atlas Menu</div><a class="card-nav-cta-button" href="Main.html">Main Menu</a></div><div class="card-nav-content"><section class="nav-card"><div class="nav-card-label">About</div><div class="nav-card-links"><a class="nav-card-link" href="Main.html">Company</a></div></section><section class="nav-card"><div class="nav-card-label">Projects</div><div class="nav-card-links"><a class="nav-card-link" href="Song-piano.html">Piano</a><a class="nav-card-link" href="Song-guitar.html">Guitar</a></div></section><section class="nav-card"><div class="nav-card-label">Contact</div><div class="nav-card-links"><a class="nav-card-link" href="mailto:hello@songatlas.app">Email</a></div></section></div></div></nav>
+    <main class="app">
+      <section class="panel preview" aria-label="Notation preview">
+        <div class="row-head">
+          <h2 id="previewTitle">Preview</h2>
+          <div class="controls">
+            <button id="startPlayback" type="button">Start</button>
+            <button id="resetPlayback" type="button">Reset</button>
+            <button id="backToSongs" type="button">Songs</button>
+          </div>
+        </div>
+        <button id="skipCountdown" class="hidden" type="button">Skip</button>
+        <p id="previewMeta" class="meta"></p>
+        <p id="countdownLabel" class="countdown" aria-live="polite"></p>
+        <svg id="staff" viewBox="0 0 1000 340" role="img" aria-label="Animated note sheet preview"></svg>
+        <div class="legend"><span>Tempo: <strong id="tempoLabel">-</strong> BPM</span><span>Progress: <strong id="progressLabel">0%</strong></span></div>
+        <p class="current-note">Current note: <strong id="currentNoteLabel">-</strong></p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
